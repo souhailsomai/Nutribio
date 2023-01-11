@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      NutriBio - Aliments biologiques à votre disposition
+    </title>
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .gradient {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <!--Icon from: http://www.potlabicons.com/ -->
+            <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+              
+            </svg>
+            NutriBio
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Nos plans</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Nos Menus</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Comment ça fonctionne</a>
+            </li>
+          </ul>
+          <button
+            id="navAction"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+          Connexion
+          </button>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <!--Hero-->
+    <div class="pt-24">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <p class="uppercase tracking-loose w-full">aliments biologiques à votre disposition</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            Éliminez le stress des repas
+          </h1>
+          <p class="leading-normal text-2xl mb-8">
+            Le kit de repas le plus populaire en Tunisie
+          </p>
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Voir nos plans
+          </button>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-4/5 z-50" src="hero.png" />
+        </div>
+      </div>
+    </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section class="bg-white border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Pourquoi NutriBio ?
+
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Aucun engagement
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Plus de 30+ recettes fraîches chaque semaine
+
+              <br />
+              <br />
+
+              Sauter des semaines ou annuler est super facile.
+              
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+            <svg class="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
+              <defs><style>.cls-1{fill:#616e7d;}.cls-2{fill:#aad4c8;}.cls-3{fill:#82bfab;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Object"><path class="cls-1" d="M8.09,385a27.9,27.9,0,0,0,19.56,8.09H418.06a27.66,27.66,0,0,0,27.65-27.64V136.86H0V365.48A27.91,27.91,0,0,0,8.09,385ZM356,155.41h63.8v56.76H356Zm0,72.45h63.8v56.76H356Zm-82.52-72.45h63.81v56.76H273.45Zm0,72.45h63.81v56.76H273.45Zm0,72.45h63.81v56.76H273.45ZM191,155.41h63.81v56.76H191Zm0,72.45h63.81v56.76H191Zm0,72.45h63.81v56.76H191Zm-82.5-144.9h63.81v56.76H108.45Zm0,72.45h63.81v56.76H108.45Zm0,72.45h63.81v56.76H108.45ZM26,227.86h63.8v56.76H26Zm0,72.45h63.8v56.76H26Z"/><rect class="cls-2" y="110.51" width="445.71" height="16.37"/><path class="cls-2" d="M45.83,31.83H27.65A27.64,27.64,0,0,0,0,59.47V91.59H445.71V59.47a27.66,27.66,0,0,0-27.65-27.64H371.17V68a12.23,12.23,0,0,1-12.23,12.23H333.17A12.22,12.22,0,0,1,321,68V31.83H124.78V68a12.24,12.24,0,0,1-12.23,12.23H86.77A12.22,12.22,0,0,1,74.55,68V31.83Z"/><rect class="cls-3" y="91.59" width="445.71" height="18.92"/><polygon class="cls-1" points="86.77 68.02 112.55 68.02 112.55 31.83 112.55 0 86.77 0 86.77 31.83 86.77 68.02"/><polygon class="cls-1" points="333.17 68.02 358.94 68.02 358.94 31.83 358.94 0 333.17 0 333.17 31.83 333.17 68.02"/><rect class="cls-3" x="108.45" y="155.41" width="63.81" height="56.76"/><rect class="cls-3" x="190.95" y="155.41" width="63.81" height="56.76"/><rect class="cls-3" x="273.45" y="155.41" width="63.81" height="56.76"/><rect class="cls-3" x="355.97" y="155.41" width="63.79" height="56.76"/><rect class="cls-3" x="25.95" y="227.86" width="63.8" height="56.76"/><rect class="cls-3" x="108.45" y="227.86" width="63.81" height="56.76"/><rect class="cls-3" x="190.95" y="227.86" width="63.81" height="56.76"/><rect class="cls-2" x="273.45" y="227.86" width="63.81" height="56.76"/><rect class="cls-3" x="355.97" y="227.86" width="63.79" height="56.76"/><rect class="cls-3" x="25.95" y="300.31" width="63.8" height="56.75"/><rect class="cls-2" x="108.45" y="300.31" width="63.81" height="56.75"/><rect class="cls-3" x="190.95" y="300.31" width="63.81" height="56.75"/><rect class="cls-3" x="273.45" y="300.31" width="63.81" height="56.75"/></g></g>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <svg class="w-5/6 sm:h-64 mx-auto" viewBox="0 0 1176.60617 873.97852" xmlns="http://www.w3.org/2000/svg">
+              <title>connected world</title>
+              <defs><style>.cls-1{fill:#9098f4;}.cls-2{fill:#b9c1fc;}.cls-3,.cls-5{fill:#fff;}.cls-4{fill:none;stroke:#cdc4f9;}.cls-4,.cls-5{stroke-miterlimit:10;stroke-width:1.05px;}.cls-5{stroke:#b4a8f4;}.cls-6{fill:#dadefd;}.cls-7{fill:#e6ac47;}.cls-8{fill:#e7eafd;}.cls-9{fill:#b4a8f4;}.cls-10{fill:#e2ddfa;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Object"><path class="cls-1" d="M433.82,468.36h-289a19.32,19.32,0,0,0-19.32,19.32H433.82Z"/><path class="cls-2" d="M527.53,338.82h-200a13.85,13.85,0,0,0-12.74,8.42L259.58,476.49A8,8,0,0,0,267,487.68H473.6a13.86,13.86,0,0,0,12.75-8.42l52.58-123.19A12.39,12.39,0,0,0,527.53,338.82Z"/><path class="cls-3" d="M424,416.08c-3,12.41-15.58,22.48-28,22.48s-20-10.07-17-22.48,15.58-22.47,28-22.47S427,403.67,424,416.08Z"/><line class="cls-4" x1="124.96" y1="497.53" x2="476.03" y2="497.53"/><line class="cls-4" x1="274.88" y1="507.52" x2="461.04" y2="507.52"/><path class="cls-5" d="M441.31,124.42H134.55a25.1,25.1,0,0,0-25.1,25.1V280a25.1,25.1,0,0,0,25.1,25.1h118l21.14,21.13,21.14-21.13H441.31a25.1,25.1,0,0,0,25.1-25.1V149.52A25.1,25.1,0,0,0,441.31,124.42Z"/><circle class="cls-6" cx="166.83" cy="176.95" r="26.21" transform="translate(-55.6 78.62) rotate(-22.84)"/><polygon class="cls-7" points="221.46 153.14 226.27 167.56 241.48 167.45 229.25 176.48 234.06 190.91 221.69 182.06 209.45 191.1 214.04 176.6 201.66 167.75 216.87 167.64 221.46 153.14"/><polygon class="cls-7" points="269.9 153.14 274.71 167.56 289.92 167.45 277.69 176.48 282.5 190.91 270.13 182.06 257.89 191.1 262.48 176.6 250.11 167.75 265.31 167.64 269.9 153.14"/><polygon class="cls-7" points="318.34 153.14 323.15 167.56 338.36 167.45 326.13 176.48 330.94 190.91 318.56 182.06 306.33 191.1 310.92 176.6 298.55 167.75 313.75 167.64 318.34 153.14"/><polygon class="cls-8" points="366.78 153.14 371.59 167.56 386.8 167.45 374.57 176.48 379.38 190.91 367.01 182.06 354.77 191.1 359.36 176.6 346.99 167.75 362.19 167.64 366.78 153.14"/><polygon class="cls-8" points="415.22 153.14 420.03 167.56 435.24 167.45 423.01 176.48 427.82 190.91 415.45 182.06 403.21 191.1 407.8 176.6 395.43 167.75 410.63 167.64 415.22 153.14"/><rect class="cls-9" x="139.23" y="214.86" width="23.15" height="6.19"/><rect class="cls-9" x="168.09" y="214.86" width="34.71" height="6.19"/><rect class="cls-10" x="139.23" y="233.24" width="49.94" height="6.19"/><rect class="cls-10" x="209.51" y="233.24" width="116.84" height="6.19"/><rect class="cls-10" x="346.7" y="233.24" width="89.93" height="6.19"/><rect class="cls-10" x="139.23" y="252.93" width="111.64" height="6.19"/><rect class="cls-10" x="380.83" y="252.93" width="55.79" height="6.19"/><rect class="cls-10" x="269.9" y="252.93" width="97.81" height="6.19"/><rect class="cls-10" x="139.23" y="272.63" width="142.49" height="6.19"/><rect class="cls-5" x="342.58" y="0.52" width="347.93" height="108.76" rx="24.46"/><polygon class="cls-7" points="457.58 36.4 462.27 50.47 477.09 50.35 465.17 59.16 469.86 73.22 457.8 64.6 445.87 73.4 450.34 59.27 438.28 50.65 453.11 50.54 457.58 36.4"/><polygon class="cls-7" points="504.8 36.4 509.48 50.47 524.31 50.35 512.38 59.16 517.07 73.22 505.01 64.6 493.09 73.4 497.56 59.27 485.5 50.65 500.32 50.54 504.8 36.4"/><polygon class="cls-7" points="552.01 36.4 556.7 50.47 571.52 50.35 559.6 59.16 564.29 73.22 552.23 64.6 540.3 73.4 544.77 59.27 532.72 50.65 547.54 50.54 552.01 36.4"/><polygon class="cls-7" points="599.23 36.4 603.92 50.47 618.74 50.35 606.81 59.16 611.5 73.22 599.44 64.6 587.52 73.4 591.99 59.27 579.93 50.65 594.75 50.54 599.23 36.4"/><polygon class="cls-8" points="646.44 36.4 651.13 50.47 665.96 50.35 654.03 59.16 658.72 73.22 646.66 64.6 634.73 73.4 639.21 59.27 627.15 50.65 641.97 50.54 646.44 36.4"/><circle class="cls-6" cx="396.6" cy="50.08" r="21.82" transform="translate(283.88 433.61) rotate(-80.82)"/><rect class="cls-9" x="370.31" y="76.39" width="19.27" height="5.15"/><rect class="cls-9" x="394.34" y="76.39" width="28.89" height="5.15"/><rect class="cls-5" x="0.52" y="28.36" width="238.9" height="74.68" rx="16.8"/><polygon class="cls-7" points="79.49 53 82.71 62.66 92.89 62.58 84.7 68.62 87.92 78.28 79.64 72.36 71.45 78.41 74.52 68.7 66.24 62.78 76.42 62.7 79.49 53"/><polygon class="cls-7" points="111.91 53 115.13 62.66 125.31 62.58 117.12 68.62 120.34 78.28 112.06 72.36 103.87 78.41 106.94 68.7 98.66 62.78 108.84 62.7 111.91 53"/><polygon class="cls-7" points="144.33 53 147.55 62.66 157.72 62.58 149.54 68.62 152.76 78.28 144.48 72.36 136.29 78.41 139.36 68.7 131.08 62.78 141.26 62.7 144.33 53"/><polygon class="cls-7" points="176.75 53 179.97 62.66 190.15 62.58 181.96 68.62 185.18 78.28 176.9 72.36 168.71 78.41 171.78 68.7 163.5 62.78 173.68 62.7 176.75 53"/><polygon class="cls-8" points="209.17 53 212.39 62.66 222.56 62.58 214.38 68.62 217.6 78.28 209.32 72.36 201.13 78.41 204.2 68.7 195.92 62.78 206.1 62.7 209.17 53"/><circle class="cls-6" cx="37.61" cy="62.39" r="14.98" transform="translate(-30.05 89.4) rotate(-80.67)"/><rect class="cls-9" x="19.57" y="80.46" width="13.23" height="3.54"/><rect class="cls-9" x="36.06" y="80.46" width="19.84" height="3.54"/></g></g>
+            </svg>
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Les avis les plus 5 étoiles              </h3>
+              <p class="text-gray-600 mb-8">
+                Notre vaste sélection de recettes impressionne semaine après semaine.
+                <br />
+                <br />
+               
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Qu'y a-t-il à l'intérieur de chaque boîte ?
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                xGETTING STARTED
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                ✓ Recettes faciles à suivre avec des informations nutritionnelles claires
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Pas lésiné sur le poulet !
+Ou un steak, ou du poisson, ou des protéines végétales.
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-start">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Commencer
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                ✓ Ingrédients de haute qualité provenant directement de la ferme              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Frais et abordable
+                Délices créés par le che              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Commencer
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                ✓ Kits de repas pratiques qui tiennent parfaitement dans le réfrigérateur              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                ✓ Emballage innovant conçu pour réduire les déchets
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-end">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Commencer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-8">
+      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Prix
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
+          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Viande & Légumes
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4">6 portions totales
+                </li>
+                <li class="border-b py-4">3 repas pour 2 personnes par semaine</li>
+                
+              </ul>
+            </div>
+            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+                45 TND
+                <span class="text-base">pour 2 personnes</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="w-full p-8 text-3xl font-bold text-center">Végétarien</div>
+              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+              <ul class="w-full text-center text-base font-bold">
+                <li class="border-b py-4">5 repas pour 2 personnes par semaine
+
+                </li>
+                <li class="border-b py-4">10 portions totales
+                </li>
+                
+              </ul>
+            </div>
+            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-4xl font-bold text-center">
+                84.99 TND
+                <span class="text-base">pour 3 personnes</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Conviviale et familiale
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4">Viande & Légumes, Végétarien et Familial
+                </li>
+                <li class="border-b py-4">6 repas pour 4 personnes par semaine
+                </li>
+                <li class="border-b py-4">24 portions totales
+                </li>
+              </ul>
+            </div>
+            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+                130.99 TND
+                <span class="text-base">/ per user</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section class="container mx-auto text-center py-6 mb-12">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        Profitez de plus de 100 options chaque semaine      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+        pour le petit-déjeuner, le déjeuner, le dîner et plus encore     </h3>
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Nous rejoindre!
+      </button>
+    </section>
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1 mb-6 text-black">
+            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              <!--Icon from: http://www.potlabicons.com/ -->
+              <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+                
+              </svg>
+              NutriBio
+            </a>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Social</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Company</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="text-gray-500"> created by 2LNIG05 </a>
+    </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
